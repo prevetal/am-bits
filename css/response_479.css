@@ -1,0 +1,39 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .cont
+    {
+        padding: 0 15px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .feedback_btn
+    {
+        font-size: 12px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .title
+    {
+        font-size: 37px;
+    }
+
+
+    .first_section .bg
+    {
+        bottom: -40px;
+
+        width: 1200px;
+        margin-right: -712px;
+    }
+}

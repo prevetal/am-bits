@@ -1,0 +1,198 @@
+@media print,
+(max-width: 1189px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding: 40px 0;
+    }
+
+
+    header .menu
+    {
+        margin-top: 24px;
+    }
+
+
+    header .menu > * + *
+    {
+        margin-left: 80px;
+    }
+
+
+    header .feedback_btn
+    {
+        padding: 15px 35px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .desc
+    {
+        font-size: 18px;
+
+        margin-top: 40px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .cont
+    {
+        padding-top: 224px;
+        padding-bottom: 148px;
+    }
+
+
+    .first_section .data
+    {
+        width: 440px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 48px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 22px;
+
+        margin-top: 20px;
+    }
+
+
+    .first_section .btn
+    {
+        font-size: 20px;
+
+        min-width: 260px;
+        margin-top: 80px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .about_info .block_head
+    {
+        width: 420px;
+    }
+
+
+    .about_info .img
+    {
+        margin-top: 20px;
+    }
+
+
+
+    /*--------------
+        Partners
+    --------------*/
+    .partners .block_head
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .partners .desc
+    {
+        font-size: 18px;
+
+        width: 420px;
+        margin-top: 40px;
+    }
+
+
+    .partners .logos .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .partners .logos .row > *
+    {
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .partners .logos .item
+    {
+        width: 148px;
+        height: 148px;
+        padding: 4px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info
+    {
+        margin-bottom: 100px;
+    }
+
+
+    .contacts_info .block_head
+    {
+        margin-bottom: 48px;
+    }
+
+
+    .contacts_info .item .icon + *
+    {
+        width: calc(100% - 85px);
+    }
+
+
+
+    /*--------------
+        Feedback
+    --------------*/
+    .feedback
+    {
+        margin-bottom: 160px;
+    }
+
+
+    .feedback .block_head
+    {
+        margin-bottom: 48px;
+    }
+
+
+    .feedback .form
+    {
+        width: 520px;
+    }
+}
