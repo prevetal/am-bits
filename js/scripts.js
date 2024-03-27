@@ -48,6 +48,67 @@ document.addEventListener('DOMContentLoaded', function () {
 			})
 		})
 	}
+
+
+	// Fancybox
+	Fancybox.defaults.autoFocus = false
+	Fancybox.defaults.trapFocus = false
+	Fancybox.defaults.dragToClose = false
+	Fancybox.defaults.placeFocusBack = false
+	Fancybox.defaults.l10n = {
+		CLOSE: 'Закрыть',
+		NEXT: 'Следующий',
+		PREV: 'Предыдущий',
+		MODAL: 'Вы можете закрыть это модальное окно нажав клавишу ESC'
+	}
+
+
+	// Modals
+	const modalBtns = document.querySelectorAll('.modal_btn')
+
+	modalBtns.forEach(el => {
+		el.addEventListener('click', e => {
+			e.preventDefault()
+
+			Fancybox.close()
+
+			Fancybox.show([{
+				src: document.getElementById(e.target.getAttribute('data-modal')),
+				type: 'inline'
+			}])
+		})
+	})
+
+
+	// Feedback form submit
+	let feedbackForm = document.querySelector('.feedback form')
+
+	feedbackForm.addEventListener('submit', function(e) {
+		e.preventDefault()
+
+		let formData = new FormData(this),
+			agreeValue = formData.get('agree')
+
+		if (agreeValue === 'on') {
+			let xhr = new XMLHttpRequest()
+
+			xhr.onload = function() {
+				if (xhr.status === 200) {
+					Fancybox.show([{
+						src: '#success_modal',
+						type: 'inline'
+					}])
+				} else {
+					alert(xhr.responseText)
+				}
+			}
+
+			xhr.open('POST', 'send.php', true)
+			xhr.send(formData)
+
+			feedbackForm.reset()
+		}
+	})
 })
 
 

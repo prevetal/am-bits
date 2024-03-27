@@ -11,6 +11,16 @@
 
 
 
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 20px;
+    }
+
+
+
     /*------------
         Header
     ------------*/
@@ -219,5 +229,21 @@
         bottom: -548px;
 
         margin-right: 0;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: 28px 24px;
+    }
+
+
+    .modal .block_head
+    {
+        margin-bottom: 20px;
     }
 }

@@ -20,6 +20,16 @@
 
 
 
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        font-size: 15px;
+    }
+
+
+
     /*-------------------
         First section
     -------------------*/
@@ -35,5 +45,15 @@
 
         width: 1200px;
         margin-right: -712px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: 40px 20px 24px;
     }
 }

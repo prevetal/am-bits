@@ -237,6 +237,22 @@ button
 
 
 
+/*--------------
+    Fancybox
+--------------*/
+.fancybox__backdrop
+{
+    background: rgba(0, 0, 0, .6);
+}
+
+
+.fancybox__slide
+{
+    padding: 40px;
+}
+
+
+
 /*------------
     Header
 ------------*/
@@ -569,9 +585,9 @@ header .feedback_btn:hover
 }
 
 
-.form .checkbox a
+.form .checkbox .btn
 {
-    color: currentColor;
+    text-decoration: underline;
 }
 
 
@@ -609,6 +625,92 @@ header .feedback_btn:hover
     color: #fff;
     background: #01aac1;
     box-shadow: 0 1px 2px 0 rgba(16, 24, 40, .05);
+}
+
+
+
+/*----------------
+    Typography
+----------------*/
+.text_block
+{
+    font-size: var(--font_size);
+}
+
+
+.text_block > *
+{
+    margin-bottom: 20px;
+}
+
+
+.text_block > :last-child
+{
+    margin-bottom: 0 !important;
+}
+
+.text_block > :first-child
+{
+    margin-top: 0 !important;
+}
+
+
+.text_block h2
+{
+    font-size: calc(var(--font_size_title) - 6px);
+    font-weight: 500;
+
+    margin-bottom: 16px !important;
+
+    text-transform: uppercase;
+
+    color: #005655;
+}
+
+
+.text_block * + h2
+{
+    margin-top: 30px;
+}
+
+.text_block h2 + *
+{
+    margin-top: 0 !important;
+}
+
+
+.text_block ul li
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    padding-left: 20px;
+
+    list-style-type: none;
+}
+
+.text_block ul li + li
+{
+    margin-top: 8px;
+}
+
+.text_block ul li:before
+{
+    position: absolute;
+    top: 8px;
+    left: 0;
+
+    display: block;
+
+    width: 5px;
+    height: 5px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: currentColor;
 }
 
 
@@ -805,6 +907,22 @@ header .feedback_btn:hover
 }
 
 
+.partners .logos .item:nth-child(1) img
+{
+    width: 157px;
+}
+
+.partners .logos .item:nth-child(2) img
+{
+    width: 108px;
+}
+
+.partners .logos .item:nth-child(3) img
+{
+    width: 112px;
+}
+
+
 
 /*-------------------
     Contacts info
@@ -918,4 +1036,43 @@ header .feedback_btn:hover
 {
     width: 540px;
     max-width: 100%;
+}
+
+
+
+/*-----------
+    PopUp
+-----------*/
+.modal
+{
+    display: none;
+    visibility: visible !important;
+
+    width: 960px;
+    max-width: 100%;
+    padding: 40px;
+
+    color: var(--text_color);
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+
+.modal .block_head
+{
+    margin-bottom: 30px;
+}
+
+
+
+
+.modal.success
+{
+    width: 480px;
+}
+
+
+.modal.success .block_head
+{
+    margin: 0;
 }
