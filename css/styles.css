@@ -291,6 +291,8 @@ header .logo
 header .logo img
 {
     display: block;
+
+    width: 65px;
 }
 
 
